@@ -1,0 +1,182 @@
+/* Font Style */
+
+.inter-normal {
+    font-family: "Inter", sans-serif;
+}
+
+/* .noto-serif-normal{
+  font-family: "Noto Serif", serif;
+} */
+
+/* Common style */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    background: rgb(245, 248, 255);
+    box-sizing: border-box;
+}
+
+.cmn-color {
+    color: rgb(233, 90, 8);
+}
+
+.cmn-color-2 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53px;
+    align-items: center;
+
+}
+
+.nav-link ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    font-weight: 700;
+}
+
+.nav-link ul li:nth-child(2),
+.nav-link ul li:nth-child(3) {
+    color: rgb(137, 135, 161);
+    font-weight: 400;
+
+}
+
+.nav-link {
+    display: flex;
+    gap: 48px;
+}
+
+/* Banner style */
+.bn-title {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+
+.bn-description {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-section {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    height: 461px;
+}
+
+.banner-image {
+    width: 570px;
+    height: 355px;
+}
+
+/*  Our plant section */
+
+.plant-content-title {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.plant-content {
+    text-align: center;
+}
+
+.card-title {
+    color: rgb(17, 17, 17);
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+
+.card-price {
+    color: rgb(17, 17, 17);
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+
+.card-btn {
+    background-color: #E95A08;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    width: 270px;
+    height: 50px;
+    border: none;
+    
+
+}
+.card-content{
+    text-align: center;
+}
+.plant-card-collection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 30px 0;
+    gap: 30px;
+}
+
+/* Responsive for mobile */
+/* considering breakpoint 576px */
+
+@media screen and (max-width: 576px) {
+
+    /* nav */
+    .nav-link ul {
+        visibility: hidden;
+    }
+
+    .div {
+        width: 113px;
+        padding: 0;
+    }
+
+    .nav-logo img {
+        width: 63px;
+        height: 38px;
+    }
+
+    .navbar {
+        margin: 28px auto;
+    }
+
+    /* banner section */
+    .banner-section {
+        flex-direction: column-reverse;
+        height: auto;
+        align-items: center;
+        width: 100%;
+        margin: 28px auto;
+    }
+
+    .bn-title {
+        font-size: 24px;
+        font-weight: 700;
+        width: 191px;
+    }
+
+    .bn-description {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+}
