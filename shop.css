@@ -101,14 +101,14 @@ body {
     color: rgb(17, 17, 17);
     font-size: 22px;
     font-weight: 500;
-    
+
 }
 
 .card-price {
     color: rgb(17, 17, 17);
     font-size: 22px;
     font-weight: 700;
-    
+
 }
 
 .card-btn {
@@ -119,17 +119,50 @@ body {
     width: 270px;
     height: 50px;
     border: none;
-    
+
 
 }
-.card-content{
+
+.card-content {
     text-align: center;
 }
-.plant-card-collection{
+
+.plant-card-collection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 30px 0;
     gap: 30px;
+}
+
+/* flower and plant lover section */
+
+.flower-lover {
+    position: relative;
+    display: flex;
+    margin-top: 210px;
+    margin-bottom: 131px;
+    gap: 60px;
+}
+
+.flower-lover-badge img {
+    width: 286px;
+    height: 286px;
+    /* box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25); */
+    
+}
+
+.flower-lover-badge {
+    position: absolute;
+    left: 360px;
+    top: -130px;
+    /* box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25); */
+
+
+}
+
+.fl-title {
+    font-size: 50px;
+    font-weight: 700;
 }
 
 /* Responsive for mobile */
@@ -179,4 +212,29 @@ body {
     .banner-image {
         width: 100%;
     }
+
+    /* plant section */
+    .plant-card-collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plant-content-title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .plant-content-description {
+        font-size: 14px;
+    }
+
+    .card-title,
+    .card-price {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .card-btn {
+        margin-top: 20px;
+    }
+
 }
