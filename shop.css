@@ -534,6 +534,9 @@ body {
     .input-btn {
         padding-bottom: 64px;
     }
+    .subscribe-btn{
+        width: 103px;
+    }
 
     .bunch-title {
         padding-top: 110px;
