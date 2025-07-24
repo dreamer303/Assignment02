@@ -166,15 +166,17 @@ body {
 }
 
 /* latest deal section */
-.latest-deal{
+.latest-deal {
     margin-bottom: 120px;
     display: flex;
     flex-direction: column;
     gap: 120px;
 }
-.deal-content{
+
+.deal-content {
     text-align: center;
 }
+
 .dl-title {
     font-size: 50px;
     font-weight: 700;
@@ -300,6 +302,37 @@ body {
     text-decoration: underline;
 }
 
+/*  Colorful bunch section */
+.colorful-bunch {
+    max-width: 1440px;
+    height: 533px;
+    margin: 0 auto;
+
+
+}
+
+.join {
+    position: relative;
+    background-image: url(./assets/news-letter-bg.png);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.bunch-title {
+    color: white;
+    padding-top: 199px;
+}
+
+.join input {
+    width: 644px;
+    height: 48px;
+    margin-top: 23px;
+}
+.join input::placeholder{
+    padding-left: 9px;
+}
+
 /* Responsive for mobile */
 /* considering breakpoint 576px */
 
@@ -403,40 +436,66 @@ body {
     }
 
     /* latest deal */
-    .dl-title{
+    .dl-title {
         font-size: 24px;
     }
-    .dl-description{
+
+    .dl-description {
         font-size: 14px;
     }
-    .latest-deal{
+
+    .latest-deal {
         gap: 24px;
         height: auto;
     }
-    .image-part-1{
+
+    .image-part-1 {
         flex-direction: column;
         width: 100%;
-        
+
     }
-    .img-1, .img-2{
+
+    .img-1,
+    .img-2 {
         height: 206px;
     }
-    .deal-image{
+
+    .deal-image {
         flex-direction: column;
     }
-    .img2-title{
+
+    .img2-title {
         margin: 0;
         padding: 0;
         padding-top: 64px;
         font-size: 20px;
     }
-    .img2-btn{
+
+    .img2-btn {
         padding-bottom: 64px;
         font-size: 16px;
     }
-    .img-part-2{
+
+    .img-part-2 {
         overflow: visible;
         width: 100%;
-        
+
+    }
+    /* join section */
+    .colorful-bunch{
+        margin-top: 40px;
+        position: relative;
+        top: 150px;
+        height: fit-content;
+       
+    }
+    .join input{
+        width: 218px;
+    }
+    .input-btn{
+        padding-bottom: 64px;
+    }
+    .bunch-title{
+        padding-top: 110px;
     }
 }
